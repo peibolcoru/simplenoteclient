@@ -1,0 +1,17 @@
+.filter-bar-container{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+@media (max-width:480px){
+    .filter-bar-container{
+        flex-direction: column;
+        gap:15px;
+        width:100%;
+        justify-content: center;
+    }
+}

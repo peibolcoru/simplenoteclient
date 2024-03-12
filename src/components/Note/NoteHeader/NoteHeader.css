@@ -1,0 +1,15 @@
+.noteHeader{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-style: oblique;
+    padding: 10px;
+    word-wrap: break-word;
+}
+.text-limit{
+    display: inline-block;
+    font-size: 0.7rem;
+    font-style: oblique;
+    color:rgb(64, 64, 64);
+    text-align: end;
+    
+}

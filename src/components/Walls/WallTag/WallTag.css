@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: var(--light1)
+}
+a
+li:hover{
+    color: var(--title)
+}
+li{
+    list-style-type: none;
+
+}
+.tag{
+    margin:5px;
+    padding: 5px 20px;
+    background-color: var(--normal2);
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.tag:hover{
+    background: rgba(var(--light1),0.5);
+    box-shadow: 1px -1px 10px 10px rgba(0,0,0,0.25);
+    transform: translateY(-2px) scale(1.1);
+}

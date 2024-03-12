@@ -1,0 +1,117 @@
+.walls-container {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(89, 131, 146, 0.4);
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 210px;
+    min-width: 210px;
+    height: fit-content;
+}
+
+.walls-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.walls-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+.walls-container p.wall-text {
+    display: block;
+    font-size: 30px;
+    font-style: oblique;
+    color: var(--title);
+}
+
+.header-walls {
+    display: flex;
+    flex-direction: column;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.openCLoseButton {
+    display: none;
+}
+
+@media (max-width:480px) {
+    .walls-container {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        position: static;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .header-walls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .walls-list {
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .walls-list.close {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5 ease-in-out;
+    }
+
+    .openCLoseButton {
+        display: inline-block;
+        text-align: center;
+       
+
+    }
+    .openCLoseButton>*{
+        transform: scale(2);
+        color:var(--black)
+    }    
+
+}

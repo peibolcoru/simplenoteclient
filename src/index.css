@@ -1,0 +1,99 @@
+:root{
+    /*paleta de colores*/
+    /*--black: #01161E;
+    --normal2: #124559;
+    --normal1: #598392;
+    --light2: #AEC3B0;
+    --light1: #EFF6E0;
+    --warning: #b71c1c;*/
+
+    --black: #01161E;
+    --normal2: #124559;
+    --normal1: #598392;
+    --light2: #AEC3B0;
+    --light1: #EFF6E0;
+    --warning: #b71c1c;
+    --pending: RGBA(173, 216, 230,0.3);
+    --oncourse: RGBA(196, 230, 187,0.5);
+    --finished: RGBA(255, 192, 203,0.3);
+    --title: RGBA(202,108,227);
+
+    background-image: linear-gradient(
+        315deg,
+        hsl(197deg 94% 6%) 0%,
+        hsl(197deg 74% 9%) 24%,
+        hsl(197deg 71% 11%) 37%,
+        hsl(197deg 69% 13%) 45%,
+        hsl(197deg 68% 15%) 52%,
+        hsl(197deg 68% 16%) 59%,
+        hsl(197deg 67% 18%) 65%,
+        hsl(197deg 67% 19%) 73%,
+        hsl(197deg 67% 20%) 82%,
+        hsl(197deg 66% 21%) 100%
+      );
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Glacial Indifference Regular" ;
+    src: url("./assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf") format("otf")
+}
+@font-face{
+    font-family: "Gota Light" ;
+    src: url("./assets/fonts/Gota/Gota\ Light.otf") format("otf")
+}
+
+
+div.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Helvetica, sans-serif;
+   
+}
+
+main{
+    position: relative;
+    /*min-width: 600px;*/
+    min-height: calc(100vh - 80px - 50px); /*menos header y footer */
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+   
+}
+
+
+.notes-container{
+box-sizing: border-box;
+width:100%;
+gap:20px;
+display:flex;
+flex-direction: row;
+justify-content:flex-start;
+flex-wrap:wrap;
+padding-top:15px;
+margin: 20px;
+min-height:  calc(100vh - 80px - 50px);
+}
+
+hr{
+    border-style:solid;
+    border:1px solid black;
+    opacity:0.3;
+}
+
+@media (max-width:480px){
+    main{
+        flex-direction: column;
+    }
+    .notes-container{
+        margin: 0px;
+        padding: 0px;
+        width:100%px;
+    }
+}

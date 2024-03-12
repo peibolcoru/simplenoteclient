@@ -1,0 +1,27 @@
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid;
+    border-color: var(--title);
+    min-width: 300px;
+    height:250px;
+    margin:10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.MuiFormControl-root{
+    width: 90%;
+}
+#login-icon{
+    color:var(--title);
+}
+
+@media (max-width:480px){
+    .form-control{
+       min-width: 200px;
+    }
+}

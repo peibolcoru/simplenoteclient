@@ -1,0 +1,21 @@
+h3{
+    text-align: center;
+}
+.ModalPopUpRegister{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: 10px;
+}
+.register-form-container{
+    margin-bottom: 10px;
+}
+.register-button{
+    margin-top: 10px;
+    color:white
+}
+.register-button:hover{
+    color: var(--title);
+}

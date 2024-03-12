@@ -1,0 +1,14 @@
+.svg-logout{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    fill:var(--light1);
+    justify-content: center;
+    margin-left: 90%;
+    margin-top: 60px;
+    
+}
+.svg-logout:hover{
+    transform: scale(1.1);
+    fill:var(--normal1)
+}

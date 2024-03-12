@@ -1,0 +1,7 @@
+.openCLoseButton{
+    width: 100%;
+}
+.openCLoseButton > *{
+    display: block;
+    margin:auto;
+}

@@ -1,0 +1,22 @@
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root > .css-1nc2mw6-MuiInputBase-root-MuiInput-root{
+    border-bottom: 1px solid var(--light1);
+} /*color de la linea inferior del textfield*/
+
+#search-note-field{
+color: var(--light1);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#search-icon{
+color: var(--light1);
+}
+#search-button{
+    background-color: transparent;
+    border:none;
+    transition: transform 0.3s;
+}
+#search-icon:hover{
+    color: var(--light2);
+    transform: scale(1.1);
+}

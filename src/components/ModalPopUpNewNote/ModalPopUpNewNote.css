@@ -1,0 +1,104 @@
+.formulario{
+    display: flex;
+    align-items: end;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-container{
+    display: flex;
+}
+.text-area{
+    background-color: transparent;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+textarea::placeholder{
+    color: black;
+    border:none;
+    }
+.MuiDialog-root .MuiFormControlLabel-label  {
+    font-size: 10px;
+    
+}
+.options-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.status-group{
+    display:flex;
+    flex-direction: row;
+}
+.priority{
+    width: fit-content;
+}
+#select-priority{
+    text-align: center;
+    color:white; 
+    font-size: 10px;  
+}
+#select-format{
+    font-size: 12px;
+    
+}
+ul.MuiList-root {
+    background-color: var(--normal1);
+    border-radius: 5px;
+    border: 1px solid white;
+    
+}
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    width:fit-content
+}
+#save-button{
+    margin: auto;
+    font-size: 10px;
+    margin-top: 10px;
+    width: 200px;
+    border-color : black;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s,color 0.3s;
+}
+#save-button:hover{
+    background-color: var(--light1);
+    box-shadow: 1px -1px 10px 10px rgba(0,0,0,0.25);
+    color: black;
+    transform: translateY(-2px) scale(1.1);
+}
+#create-note-button{
+color:var(--light2);
+border-radius: 20px;
+box-shadow: 1px -1px 10px 4px rgba(0,0,0,0.15);
+transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s,color 0.3s;
+}
+#create-note-button:hover{
+
+    color: black;
+    background: var(--light1);
+    box-shadow: 1px -1px 10px 10px rgba(0,0,0,0.15);
+    transform: translateY(-2px) scale(1.1);
+}
+#delete-button{
+    border-radius: 50px;
+    font-size: 35px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s,color 0.3s;
+}
+#delete-button:hover{
+    /*box-shadow: 1px -1px 10px 10px rgba(183, 28, 28, 0.5);*/
+    color: var(--warning);
+    transform: translateY(-2px) scale(1.1);
+}
+#close-button{
+    position: absolute;
+    top:-10px;
+    right:-50px;
+}

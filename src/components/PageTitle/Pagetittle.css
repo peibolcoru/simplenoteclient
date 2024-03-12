@@ -1,0 +1,33 @@
+.Pagetitle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    }
+.title1{
+    font-family:"Gota Light";
+    font-weight: bold;
+    font-size: 8rem;
+    color: var(--title);
+    text-align: center;
+    text-shadow: 8px 4px 20px rgba(0,0,0,0.59);
+}
+.title2{
+    position:absolute ;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    font-size: 7rem;
+    font-family:"Glacial Indifference";
+    color: var(--light1);
+    text-align: center;
+    text-shadow: 8px 4px 20px rgba(0,0,0,0.59);
+}
+@media (max-width:800px){
+    .title1{
+        font-size:4rem
+    }
+    .title2{
+        font-size: 3rem;
+    }
+}

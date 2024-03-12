@@ -1,0 +1,18 @@
+.filter-by-container {
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    height: 20px
+}
+.filter-by-container p {
+    display:block;
+    color: var(--light1);
+    width: max-content;
+    font-size: 1.1rem;
+    transition: transform 2s;
+}
+.filter-by-container *:not([id=filterBy]):hover{
+   color:var(--light2);
+   cursor:pointer;
+   transform: scale(1.1)
+}
