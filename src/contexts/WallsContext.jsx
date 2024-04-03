@@ -31,7 +31,10 @@ const WallsProvider = ({children}) =>{
         }} 
     useEffect(()=>{
         
-            if(isAuthenticated)fetchWalls();
+            if(isAuthenticated){
+                setWalls([])
+                fetchWalls()
+            }
         },[isAuthenticated])
 
 

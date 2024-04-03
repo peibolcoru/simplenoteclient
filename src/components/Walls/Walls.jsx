@@ -5,7 +5,6 @@ import { WallTag } from './WallTag/WallTag';
 import { useContext, useState } from 'react';
 import { WallsContext } from '../../contexts/WallsContext';
 
-
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Menu } from '@mui/material';
@@ -15,14 +14,21 @@ export const Walls = () => {
   const { walls, setWalls, loading } = useContext(WallsContext);
 
   const [display, setDisplay] = useState('');
+  const [selectedIndex, setSelectedIndex] = useState();
 
   if (loading) {
     return <h2>Loading</h2>;
   }
-  
+
   const handleDisplay = () => {
-    if (display==='close') {setDisplay(`open`)} else{setDisplay('close')};
+    if (display === 'close') {
+      setDisplay(`open`);
+    } else {
+      setDisplay('close');
+    }
   };
+
+  
 
   return (
     <div className='walls-container scale-up-center' onClick={handleDisplay}>
@@ -31,7 +37,7 @@ export const Walls = () => {
         <NewWallForm setWalls={setWalls} />
       </div>
 
-      <ul className={'walls-list '+ (display==='close'?'close':'')}>
+      <ul className={'walls-list ' + (display === 'close' ? 'close' : '')}>
         {walls &&
           walls.map((wallItem) => {
             return (
@@ -40,11 +46,13 @@ export const Walls = () => {
                 wallItem={wallItem}
                 setWalls={setWalls}
                 setDisplay={setDisplay}
+                selectedIndex={selectedIndex}
+                setSelectedIndex={setSelectedIndex}
               />
             );
           })}
       </ul>
-      <MenuDisplay display={display} setDisplay={setDisplay}/>
+      <MenuDisplay display={display} setDisplay={setDisplay} />
     </div>
   );
 };

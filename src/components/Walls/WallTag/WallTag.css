@@ -21,5 +21,8 @@ li{
 .tag:hover{
     background: rgba(var(--light1),0.5);
     box-shadow: 1px -1px 10px 10px rgba(0,0,0,0.25);
-    transform: translateY(-2px) scale(1.1);
+    transform: translateY(-2px) scale(1.1);å
+}
+.tag.selected{
+    color: var(--title);
 }
