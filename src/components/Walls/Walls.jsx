@@ -28,7 +28,10 @@ export const Walls = () => {
     }
   };
 
-  
+  const handleclick = (index) => {
+    setSelectedIndex(index);
+    console.log(`seleccionado:${selectedIndex}`);
+  };
 
   return (
     <div className='walls-container scale-up-center' onClick={handleDisplay}>
